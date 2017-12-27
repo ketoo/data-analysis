@@ -9,6 +9,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Properties;
 
 @EnableScheduling
@@ -18,7 +20,16 @@ public class NFApplication extends SpringBootServletInitializer implements Embed
 
     public static void main(String [] args)
     {
-
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_YEAR, -1);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(sdf.format(calendar.getTime()));
+    
+        calendar.add(Calendar.DAY_OF_YEAR, -27);
+        System.out.println(sdf.format(calendar.getTime()));
+    
+    
+    
         SpringApplication.run(NFApplication.class, args);
     }
 

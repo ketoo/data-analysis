@@ -50,7 +50,7 @@ public class NFLogModule implements NFILogModule
     {
 
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_MONTH, -1);
+        calendar.add(Calendar.DAY_OF_YEAR, -1);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String time = sdf.format(calendar.getTime());
         String filePath = "./" + time;

@@ -6,6 +6,7 @@ import com.nf.comm.NFLogType;
 import com.nf.model.NFDailyNewUsersModel;
 import com.nf.module.NFIDailyNewUsersModule;
 import com.nf.module.NFILogModule;
+import com.nf.nosqlservice.NFINosqlBzModule;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,29 +20,37 @@ import java.util.*;
 @Service
 public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
 {
+    //新增用户
     @Autowired
     private NFILogModule logModule;
+    
+    @Autowired
+    private NFINosqlBzModule nosqlBzModule;
 
     @Autowired
-    NFDailyNewUsersDAO dailyNewUsersDAO;
+    private NFDailyNewUsersDAO dailyNewUsersDAO;
 
     private static List<String> mxLineList = new ArrayList<>();
 
     private static Map<String, Integer> mxPlatMap = new HashMap<String, Integer>();
-
-
+    
+    
+    private static List<String> mxDevicesList = new ArrayList<>();
+    
     //for saving
-    private static List<NFDailyNewUsersModel> mxDailyNewUsersModelList = new ArrayList<>();
+    private static List<NFDailyNewUsersModel> mxModelList = new ArrayList<>();
 
 
     @Override
     public void reset()
     {
+        mxDevicesList.clear();
         mxLineList.clear();
         mxPlatMap.clear();
-        mxDailyNewUsersModelList.clear();
+        mxModelList.clear();
     }
 
+    //留存
     @Override
     public void map()
     {
@@ -90,6 +99,11 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
                     number++;
                     mxPlatMap.replace(keyPlat, number);
                 }
+    
+    
+                //记录所有的设备
+                String deviceID = elements[NFInputType.PlayerRegisterType.DeviceId.getId()];
+                mxDevicesList.add(deviceID);
             }
         }
 
@@ -100,31 +114,37 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
     {
         for (Map.Entry<String, Integer> entry : mxPlatMap.entrySet())
         {
-            NFDailyNewUsersModel xDailyNewUsersModel = new NFDailyNewUsersModel();
+            NFDailyNewUsersModel xModel = new NFDailyNewUsersModel();
 
-            xDailyNewUsersModel.setAppid("");
-            xDailyNewUsersModel.setZoneid("");
-            xDailyNewUsersModel.setPlat(entry.getKey());
-            xDailyNewUsersModel.setNumber(entry.getValue());
-            xDailyNewUsersModel.setTotal_number(mxLineList.size());
+            xModel.setAppid("");
+            xModel.setZoneid("");
+            xModel.setPlat(entry.getKey());
+            xModel.setNumber(entry.getValue());
+            xModel.setTotal_number(mxLineList.size());
 
             Calendar calendar = Calendar.getInstance();
-            calendar.add(Calendar.DAY_OF_MONTH, -1);
+            calendar.add(Calendar.DAY_OF_YEAR, -1);
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            xDailyNewUsersModel.setTime(sdf.format(calendar.getTime()));
+            xModel.setTime(sdf.format(calendar.getTime()));
 
-            mxDailyNewUsersModelList.add(xDailyNewUsersModel);
+            mxModelList.add(xModel);
         }
 
     }
 
-
     @Override
     public void saveBusinessAnalyseResult()
     {
-        for (int i= 0; i < mxDailyNewUsersModelList.size(); ++i)
+        for (int i = 0; i < mxModelList.size(); ++i)
         {
-            dailyNewUsersDAO.saveAndFlush(mxDailyNewUsersModelList.get(i));
+            dailyNewUsersDAO.saveAndFlush(mxModelList.get(i));
+        }
+        
+        //storage all new device
+        for (int i = 0; i < mxDevicesList.size(); ++i)
+        {
+            String device = mxDevicesList.get(i);
+            nosqlBzModule.addToTotalDeviceList(device);
         }
     }
 }

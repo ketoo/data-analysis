@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "daily_new_users")
+//分渠道
 public class NFDailyNewUsersModel
 {
     @Id
@@ -26,9 +27,14 @@ public class NFDailyNewUsersModel
     private String zoneid;
 
     private String time;
-
+    
+    //今天此平台plat的新增
     private Integer number;
+    
+    //今天所有的新增,不分渠道
+    private Integer today_number;
 
+    //历史所有新增,不分渠道
     private Integer total_number;
 
 

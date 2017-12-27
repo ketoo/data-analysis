@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/log-service/log-service.iml" filepath="$PROJECT_DIR$/log-service/log-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-service/log-service.iml" filepath="$PROJECT_DIR$/log-service/log-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-service/merchant-service.iml" filepath="$PROJECT_DIR$/log-service/merchant-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nf-ba.iml" filepath="$PROJECT_DIR$/.idea/nf-ba.iml" />
     </modules>

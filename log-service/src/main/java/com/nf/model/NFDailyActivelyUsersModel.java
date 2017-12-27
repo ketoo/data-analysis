@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "daily_actively_users")
+//分渠道
 public class NFDailyActivelyUsersModel
 {
     @Id
@@ -26,10 +27,10 @@ public class NFDailyActivelyUsersModel
     private String zoneid;
 
     private String time;
+    
+    private Integer number;//当前渠道人数
+    
+    private Integer total_number;//今日的总人数，不分渠道
 
-    private Integer total_number;
-
-    private float avg_time;
-
-    private float rate;
+    private float avg_time;//平均在线时间，不分渠道
 }
