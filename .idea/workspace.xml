@@ -9,6 +9,7 @@
     <ignored path="$PROJECT_DIR$/trader-service/target/" />
     <ignored path="$PROJECT_DIR$/wechat-service/target/" />
     <ignored path="$PROJECT_DIR$/log-service/target/" />
+    <ignored path="$PROJECT_DIR$/log-analysis/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,107 +20,85 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NFDailyNewUsersModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyNewUsersModule.java">
+      <file leaf-file-name="log-service.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-service/log-service.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="116" column="34" lean-forward="false" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NFDailyActivelyUsersModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyActivelyUsersModel.java">
+      <file leaf-file-name="log-analysis.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-analysis/log-analysis.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="-1">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NFDailyAVGOnlineTimeModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyAVGOnlineTimeModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFBlockFlowModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFBlockFlowModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFDailyAVGOnlineTimeModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyAVGOnlineTimeModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFLogModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFLogModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFDailyActivelyUsersModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyActivelyUsersModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFSchedule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFSchedule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NFApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplication.java">
+      <file leaf-file-name="NFLogController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/controller/NFLogController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="41" />
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NFDailyNewUsersModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyNewUsersModel.java">
+      <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-local.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application-local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NFAnalysisController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/controller/NFAnalysisController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NFLogApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/NFLogApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,33 +110,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/mnt/data/apps/logs</find>
-      <find>/mnt/data/apps/log</find>
-      <find>/mnt/data/apps/lo</find>
-      <find>/mnt/data/apps/l</find>
-      <find>/mnt/data/apps/</find>
-      <find>/mnt/data/apps/logs/latipay-merchant-services-hz.log</find>
-      <find>/mnt/data/apps</find>
-      <find>notifyController</find>
-      <find>manifest</find>
-      <find>mainClass</find>
-      <find>mybatis</find>
-      <find>data</find>
-      <find>mysql</find>
-      <find>192.168.20.67</find>
-      <find>log4</find>
-      <find>log</find>
-      <find>org.apache.logging.log4j</find>
-      <find>1</find>
-      <find>102</find>
-      <find>la</find>
-      <find>lati</find>
       <find>latip</find>
       <find>DAY_OF_YEAR</find>
       <find>DAY_OF_YEA</find>
@@ -167,6 +127,27 @@
       <find>DAY_OF_m</find>
       <find>DAY_OF_mo</find>
       <find>DAY_OF_mon</find>
+      <find>File[] files = root.listFiles()</find>
+      <find>spring-boot-starter-mail</find>
+      <find>spring-boot-starter-data-jpa</find>
+      <find>spring-boot-starter-parent</find>
+      <find>org.springframework.boot</find>
+      <find>artifactId</find>
+      <find>spring-boot-starter</find>
+      <find>logging</find>
+      <find>spring-boot-starter-log4j</find>
+      <find>o</find>
+      <find>log4j</find>
+      <find>web</find>
+      <find>thymeleaf</find>
+      <find>ThresholdFilter</find>
+      <find>TRACE_FILE</find>
+      <find>INFO_FILE</find>
+      <find>DEBUG_FILE</find>
+      <find>WARN_FILE</find>
+      <find>ERROR_FILE</find>
+      <find>PATH</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,28 +175,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFItemFlowDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFDailyRetentionDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFDailyAVGOnlineTimeDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFDailyActivelyUsesDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFBlockFlowDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFAPIFlowDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/DAO/NFActivityFlowDAO.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlmodule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFBAModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFActivityFlowModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFAPIFlowModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFBlockFlowModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyRetentionModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFItemFlowModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFMoneyFlowModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFPayFlowModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFPlayerBehaviourFlowModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFRoundFlowModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFTaskFlowModel.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFSchedule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFILogModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/comm/NFInputType.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFIBAModule.java" />
@@ -228,23 +192,40 @@
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFPlayerBehaviourFlowModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFRoundFlowModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFTaskFlowModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-prod.properties" />
-        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-local.properties" />
-        <option value="$PROJECT_DIR$/log-service/pom.xml" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyRetentionModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlKeyModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlKeyModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlBzModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlBzModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplication.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFLogModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyNewUsersModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyActivelyUsersModel.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyActivelyUsersModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyNewUsersModule.java" />
-        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyAVGOnlineTimeModule.java" />
         <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyAVGOnlineTimeModel.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyRetentionModel.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyRetentionModule.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlBzModule.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFPaySumModel.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFLogModule.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFSchedule.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyAVGOnlineTimeModule.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFScheduleTest.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplicationTest.java" />
+        <option value="$PROJECT_DIR$/log-service/src/test/NFApplicationTest.java" />
+        <option value="$PROJECT_DIR$/log-analysis/src/main/java/nf/controller/NFLogController.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/log-service/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplication.java" />
+        <option value="$PROJECT_DIR$/log-analysis/src/main/java/NFLogApp.java" />
+        <option value="$PROJECT_DIR$/log-service/src/main/java/com/nf/controller/NFLogController.java" />
+        <option value="$PROJECT_DIR$/log-analysis/src/main/java/com/nf/controller/NFAnalysisController.java" />
+        <option value="$PROJECT_DIR$/log-service/pom.xml" />
+        <option value="$PROJECT_DIR$/log-analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/log-analysis/logs/info.2018-01-05.log" />
+        <option value="$PROJECT_DIR$/log-analysis/logs/trace.2018-01-05.log" />
       </list>
     </option>
   </component>
@@ -257,6 +238,40 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="log-system" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="log-analysis" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="log-analysis" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Run Configurations" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RunConfigurationsNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -284,6 +299,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="45" />
     <option name="y" value="23" />
     <option name="width" value="1395" />
     <option name="height" value="877" />
@@ -303,25 +319,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -331,15 +350,133 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="log-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-analysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log-analysis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -357,15 +494,15 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
+              <option name="myItemId" value="log-analysis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -387,15 +524,15 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
+              <option name="myItemId" value="log-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
+              <option name="myItemId" value="log-analysis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -415,199 +552,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="schedule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nosqlservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nosqlservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-analysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="filt&#9;PSI&#9;JAVA://net.latipay.merchant.init.JwtValidationFilter&#10;jwt&#9;PSI&#9;JAVA://net.latipay.merchant.init.JwtValidationFilter&#10;mail&#9;PSI&#9;JAVA://net.latipay.merchant.service.impl.CEmailModule&#10;ban&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/trader-service/src/main/java/net/latipay/trader/service/IBankAccountModule.java&#10;doc&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/trader-service/src/main/java/net/latipay/trader/controller/DocController.java&#10;docc&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/trader-service/src/main/java/net/latipay/trader/controller/DocController.java&#10;enume&#9;PSI&#9;JAVA://net.latipay.common.domain.CurrencyType#getEnumDescEng&#10;LocalCacheService&#9;PSI&#9;JAVA://net.latipay.trader.controller.TransactionController#localCacheService&#10;/queryorder&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/merchant-service/src/main/java/net/latipay/merchant/controller/payment/schema/QueryOrderRequest.java&#10;rulemana&#9;PSI&#9;JAVA://net.latipay.common.risk.rule.RuleManager&#10;val&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/merchant-service/src/main/java/net/latipay/merchant/init/JwtValidationFilter.java&#10;jwt parse fail&#9;null&#9;null&#10;jw&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/merchant-service/src/main/java/net/latipay/merchant/init/JwtValidationFilter.java&#10;Withdraw&#9;PSI&#9;JAVA://net.latipay.merchant.controller.finance.WithdrawMoneyController&#10;bank account ex&#9;PSI&#9;JAVA://net.latipay.common.domain.ResCode#BANK_ACCOUNT_EXIST&#10;updateByOrderIdAndStatus&#9;PSI&#9;JAVA://net.latipay.trader.repository.TransactionOrderMapper#updateByOrderIdAndStatus&#10;modifyData&#9;PSI&#9;JAVA://com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl#modifyingCharacterData&#10;CUserDataModule.&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/merchant-service/src/main/java/net/latipay/merchant/service/impl/CUserDataModule.java&#10;LoginContextHolder&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/common/src/main/java/net/latipay/common/util/LoginContextHolder.java&#10;COrganisationModule.java&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/merchant-service/src/main/java/net/latipay/merchant/service/impl/COrganisationModule.java&#10;OrgUserMapper&#9;PSI&#9;JAVA://net.latipay.merchant.repository.OrgUserMapper&#10;LoginContext.java&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/common/src/main/java/net/latipay/common/domain/LoginContext.java&#10;TransactionStatus&#9;FILE&#9;file:///Users/lushenghuang/work/latipay-2.0-fleet/common/src/main/java/net/latipay/common/domain/TransactionStatus.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nf" />
+      <recent name="com.nf.schedule" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/log-analysis/src/main/java" />
+      <recent name="$PROJECT_DIR$/log-analysis" />
+      <recent name="$PROJECT_DIR$/log-service/src/test" />
+      <recent name="$PROJECT_DIR$/log-service/src/main/java/com/nf" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -829,7 +805,7 @@
             <option name="passParentEnv" value="true" />
             <option name="runMavenInBackground" value="true" />
             <option name="skipTests" value="false" />
-            <option name="vmOptions" value="-jar ./target/log-service-1.0.0-SNAPSHOT.jar --spring.profiles.active=local" />
+            <option name="vmOptions" value="-jar ./target/log-analysis-1.0.0-SNAPSHOT.jar --spring.profiles.active=local" />
           </MavenRunnerSettings>
         </option>
         <option name="myRunnerParameters">
@@ -844,7 +820,7 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/log-service" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/log-analysis" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -1247,23 +1223,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1395" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="45" y="23" width="1395" height="877" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.49741697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.502583" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21064301" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20842572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21656051" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26385808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21656051" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16703622" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39617833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16703622" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1274,6 +1248,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.49741697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1332,13 +1307,25 @@
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplication.java</url>
-          <line>32</line>
+          <url>file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/controller/NFAnalysisController.java</url>
+          <line>23</line>
           <properties />
-          <option name="timeStamp" value="92" />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/log-service/src/main/java/com/nf/controller/NFLogController.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/log-service/src/main/java/com/nf/controller/NFLogController.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="93" />
+      <option name="time" value="112" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1347,113 +1334,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFItemFlowModel.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/DAO/NFDailyAVGOnlineTimeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFPlayerBehaviourFlowModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFRoundFlowModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/String.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar!/com/mysql/jdbc/StringUtils.class" />
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/comm/NFLogType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFILogModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFIBAModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFAPIFlowModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFBlockFlowModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/DAO/NFDailyNewUsersDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFPayFlowModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFPlayerBehaviourFlowModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFRoundFlowModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFTaskFlowModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFCnfModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFCnfModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
@@ -1461,282 +1358,420 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFMoneyFlowModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFDailyRetentionModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFItemFlowModue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFDailyNewUsersModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFDailyAVGOnlineTimeModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFDailyActivelyUsersModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24-sources.jar!/org/apache/log4j/BasicConfigurator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-sources.jar!/ch/qos/logback/classic/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-sources.jar!/ch/qos/logback/classic/spi/LoggingEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar!/org/slf4j/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="297" column="16" lean-forward="false" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar!/org/slf4j/helpers/SubstituteLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-sources.jar!/ch/qos/logback/classic/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="501" column="25" lean-forward="false" selection-start-line="501" selection-start-column="25" selection-end-line="501" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24-sources.jar!/org/apache/log4j/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="279" column="0" lean-forward="false" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE-sources.jar!/org/springframework/boot/logging/logback/LogbackLoggingSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/logging/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1415">
+          <caret line="164" column="30" lean-forward="false" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8751">
+          <caret line="1535" column="29" lean-forward="false" selection-start-line="1535" selection-start-column="29" selection-end-line="1535" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/module/impl/NFActivityFlowModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-service/src/test/NFApplicationTest.java" />
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/schedule/NFSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFScheduleTest.java" />
+    <entry file="file://$PROJECT_DIR$/log-service/src/test/NFApplicationTest.java" />
+    <entry file="file://$PROJECT_DIR$/log-analysis/mvnbuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/comm/NFInputType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#557#558#0" expanded="false" />
+            <element signature="e#592#593#0" expanded="false" />
+            <element signature="e#934#935#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+            <element signature="e#1007#1008#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+            <element signature="e#1374#1375#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1447#1448#0" expanded="false" />
+            <element signature="e#1482#1483#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1894#1895#0" expanded="false" />
+            <element signature="e#1927#1928#0" expanded="false" />
+            <element signature="e#1962#1963#0" expanded="false" />
+            <element signature="e#2393#2394#0" expanded="false" />
+            <element signature="e#2433#2434#0" expanded="false" />
+            <element signature="e#2466#2467#0" expanded="false" />
+            <element signature="e#2501#2502#0" expanded="false" />
+            <element signature="e#2868#2869#0" expanded="false" />
+            <element signature="e#2908#2909#0" expanded="false" />
+            <element signature="e#2941#2942#0" expanded="false" />
+            <element signature="e#2976#2977#0" expanded="false" />
+            <element signature="e#3372#3373#0" expanded="false" />
+            <element signature="e#3412#3413#0" expanded="false" />
+            <element signature="e#3445#3446#0" expanded="false" />
+            <element signature="e#3480#3481#0" expanded="false" />
+            <element signature="e#3844#3845#0" expanded="false" />
+            <element signature="e#3884#3885#0" expanded="false" />
+            <element signature="e#3917#3918#0" expanded="false" />
+            <element signature="e#3952#3953#0" expanded="false" />
+            <element signature="e#4398#4399#0" expanded="false" />
+            <element signature="e#4438#4439#0" expanded="false" />
+            <element signature="e#4471#4472#0" expanded="false" />
+            <element signature="e#4506#4507#0" expanded="false" />
+            <element signature="e#5005#5006#0" expanded="false" />
+            <element signature="e#5045#5046#0" expanded="false" />
+            <element signature="e#5078#5079#0" expanded="false" />
+            <element signature="e#5113#5114#0" expanded="false" />
+            <element signature="e#5609#5610#0" expanded="false" />
+            <element signature="e#5649#5650#0" expanded="false" />
+            <element signature="e#5682#5683#0" expanded="false" />
+            <element signature="e#5717#5718#0" expanded="false" />
+            <element signature="e#6120#6121#0" expanded="false" />
+            <element signature="e#6160#6161#0" expanded="false" />
+            <element signature="e#6193#6194#0" expanded="false" />
+            <element signature="e#6228#6229#0" expanded="false" />
+            <element signature="e#6691#6692#0" expanded="false" />
+            <element signature="e#6731#6732#0" expanded="false" />
+            <element signature="e#6764#6765#0" expanded="false" />
+            <element signature="e#6799#6800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/DAO/NFActivityFlowDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/application-prod.properties">
+    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/application-dev.properties">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/NFApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="294">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.2.3.RELEASE/spring-cloud-context-1.2.3.RELEASE.jar!/org/springframework/cloud/bootstrap/LoggingSystemShutdownListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/README.md" />
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/resources/application-local.properties">
+    <entry file="file://$PROJECT_DIR$/log-analysis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="272" column="10" lean-forward="false" selection-start-line="272" selection-start-column="10" selection-end-line="272" selection-end-column="10" />
+        <state relative-caret-position="126">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFItemFlowModue.java">
+    <entry file="file://$PROJECT_DIR$/settings-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFActivityFlowModule.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlKeyModule.java">
+    <entry file="file://$PROJECT_DIR$/CODEOWNERS">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlKeyModule.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFIDailyRetentionModule.java">
+    <entry file="file://$PROJECT_DIR$/log-service/log-analysis1.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/NFIDailyNewUsersModule.java">
+    <entry file="file://$PROJECT_DIR$/log-service/log-service.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/dependency-reduced-pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="416" column="19" lean-forward="false" selection-start-line="416" selection-start-column="19" selection-end-line="416" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFPayFlowModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="-1191">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFMoneyFlowModel.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/log-analysis.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFTaskFlowModel.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/logs/warn.2018-01-05.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyRetentionModel.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/logs/error.2018-01-05.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyRetentionModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/logs/debug.2018-01-05.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/comm/NFInputType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/NFINosqlBzModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/logs/info.2018-01-05.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/logs/trace.2018-01-05.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="295">
+          <caret line="364" column="51" lean-forward="false" selection-start-line="364" selection-start-column="51" selection-end-line="364" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/resources/application-local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/nosqlservice/impl/NFNosqlBzModule.java">
+    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/NFLogApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="24">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="2796" column="7" lean-forward="true" selection-start-line="2796" selection-start-column="7" selection-end-line="2796" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/schedule/NFSchedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/NFApplication.java">
+    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/controller/NFLogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="41" />
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFLogModule.java">
+    <entry file="file://$PROJECT_DIR$/log-analysis/src/main/java/com/nf/controller/NFAnalysisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyNewUsersModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyActivelyUsersModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyActivelyUsersModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+        <state relative-caret-position="344">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyNewUsersModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="116" column="34" lean-forward="false" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/module/impl/NFDailyAVGOnlineTimeModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFDailyAVGOnlineTimeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log-service/src/main/java/com/nf/model/NFBlockFlowModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

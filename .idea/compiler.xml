@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="log-analysis" />
         <module name="log-service" />
         <module name="merchant-service" />
       </profile>
@@ -14,7 +15,9 @@
       <module name="common" target="1.8" />
       <module name="job-service" target="1.8" />
       <module name="latipay-2.0-fleet" target="1.5" />
+      <module name="log-analysis" target="1.8" />
       <module name="log-service" target="1.8" />
+      <module name="log-system" target="1.5" />
       <module name="merchant-service" target="1.8" />
       <module name="nf-ba" target="1.5" />
       <module name="trader-service" target="1.8" />

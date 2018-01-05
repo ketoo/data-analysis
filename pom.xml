@@ -5,13 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nf</groupId>
-    <artifactId>nf-ba</artifactId>
+    <artifactId>log-system</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>NF-BA Project</name>
+    <name>log-system</name>
 
     <modules>
         <module>log-service</module>
+        <module>log-analysis</module>
     </modules>
 
     <build>

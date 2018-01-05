@@ -1,0 +1,4 @@
+[2018-01-05 20:30:50] [WARN ] [org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration:147]-- No spring.application.name found, defaulting to 'application'
+[2018-01-05 20:30:50] [WARN ] [com.netflix.config.sources.URLConfigurationSource:121]-- No URLs will be polled as dynamic configuration sources.
+[2018-01-05 20:30:50] [WARN ] [com.netflix.config.sources.URLConfigurationSource:121]-- No URLs will be polled as dynamic configuration sources.
+[2018-01-05 20:30:52] [WARN ] [org.springframework.boot.autoconfigure.thymeleaf.AbstractTemplateResolverConfiguration:60]-- Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
