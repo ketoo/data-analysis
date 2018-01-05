@@ -33,6 +33,6 @@ public class NFLogApp extends SpringBootServletInitializer implements EmbeddedSe
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container)
     {
-        container.setPort(5000);
+        container.setPort(6000);
     }
 }

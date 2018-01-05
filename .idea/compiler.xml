@@ -20,6 +20,7 @@
       <module name="log-system" target="1.5" />
       <module name="merchant-service" target="1.8" />
       <module name="nf-ba" target="1.5" />
+      <module name="test" target="1.5" />
       <module name="trader-service" target="1.8" />
       <module name="wechat-service" target="1.8" />
     </bytecodeTargetLevel>
