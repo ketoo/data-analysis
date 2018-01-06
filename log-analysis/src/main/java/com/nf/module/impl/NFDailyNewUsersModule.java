@@ -34,17 +34,90 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
 
     private static Map<String, Integer> mxPlatMap = new HashMap<String, Integer>();
     
-    
-    private static List<String> mxDevicesList = new ArrayList<>();
-    
     //for saving
     private static List<NFDailyNewUsersModel> mxModelList = new ArrayList<>();
-
-
+    
+    
+    @Override
+    public List<String> getNewUserList()
+    {
+        HashMap<String, Integer> newUserList = new HashMap<String, Integer>();
+        
+        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGIN);
+        if (strList != null)
+        {
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+            
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerLogin.values().length)
+                {
+                    String openID = elements[NFInputType.PlayerLogin.Openid.getId()];
+                    String loginCount = elements[NFInputType.PlayerLogin.LoginCount.getId()];
+                    Integer nCount = Integer.parseInt(loginCount);
+                
+                    //登录次数为0-1次的，才是第一次登录，新增用户
+                    if (nCount <= 1)
+                    {
+                        if (newUserList.containsKey(openID))
+                        {
+                            newUserList.put(openID, nCount);
+                        }
+                    }
+                }
+            }
+        }
+    
+        List<String> userList = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry: newUserList.entrySet())
+        {
+            userList.add(entry.getKey());
+        }
+        
+        return userList;
+    }
+    
+    
+    @Override
+    public List<String> getNewDeviceList()
+    {
+        HashMap<String, Integer> newDeviceList = new HashMap<String, Integer>();
+    
+        List<String> strList = logModule.getLogData(NFLogType.LOG_REGISTER);
+        if (strList != null)
+        {
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+            
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerRegisterType.values().length)
+                {
+                    String deviceID = elements[NFInputType.PlayerRegisterType.DeviceId.getId()];
+                    if (!nosqlBzModule.existDevice(deviceID))
+                    {
+                        if (newDeviceList.containsKey(deviceID))
+                        {
+                            newDeviceList.put(deviceID, 0);
+                        }
+                    }
+                }
+            }
+        }
+    
+        List<String> deviceList = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry: newDeviceList.entrySet())
+        {
+            deviceList.add(entry.getKey());
+        }
+    
+        return deviceList;
+    }
+    
     @Override
     public void reset()
     {
-        mxDevicesList.clear();
         mxLineList.clear();
         mxPlatMap.clear();
         mxModelList.clear();
@@ -55,7 +128,7 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
     public void map()
     {
         //1 去重
-        List<String> strList = logModule.getLogData(NFLogType.LOG_REGISTER);
+        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGIN);
         if (strList != null)
         {
             Map<String, Integer> xNewUserMap = new HashMap<String, Integer>();
@@ -65,14 +138,22 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
                 String line = strList.get(i);
 
                 String[] elements = StringUtils.split(line, '|');
-                if (elements.length == NFInputType.PlayerRegisterType.values().length)
+                if (elements.length == NFInputType.PlayerLogin.values().length)
                 {
-                    String key = elements[NFInputType.PlayerRegisterType.DeviceId.getId()];
-                    if (!xNewUserMap.containsKey(key))
+                    String openID = elements[NFInputType.PlayerLogin.Openid.getId()];
+                    String loginCount = elements[NFInputType.PlayerLogin.LoginCount.getId()];
+                    Integer nCount = Integer.parseInt(loginCount);
+                    
+                    //登录次数为0-1次的，才是第一次登录，新增用户
+                    if (nCount <= 1)
                     {
-                        xNewUserMap.put(key, 1);
-                        mxLineList.add(line);
+                        if (!xNewUserMap.containsKey(openID))
+                        {
+                            xNewUserMap.put(openID, 1);
+                            mxLineList.add(line);
+                        }
                     }
+                    
                 }
             }
         }
@@ -85,42 +166,59 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
         {
             String line = mxLineList.get(i);
             String[] elements = StringUtils.split(line,'|');
-            if (elements.length == NFInputType.PlayerRegisterType.values().length)
+            if (elements.length == NFInputType.PlayerLogin.values().length)
             {
                 //2分析平台
-                String keyPlat = elements[NFInputType.PlayerRegisterType.PlatID.getId()];
-                if (!mxPlatMap.containsKey(keyPlat))
+                String keyPlat = elements[NFInputType.PlayerLogin.PlatID.getId()];
+                String loginCount = elements[NFInputType.PlayerLogin.LoginCount.getId()];
+                Integer nLoginCount = Integer.parseInt(loginCount);
+                if (nLoginCount <= 1)
                 {
-                    mxPlatMap.put(keyPlat, 1);
+                    if (!mxPlatMap.containsKey(keyPlat))
+                    {
+                        mxPlatMap.put(keyPlat, 1);
+                    }
+                    else
+                    {
+                        Integer number = mxPlatMap.get(keyPlat);
+                        number++;
+                        mxPlatMap.replace(keyPlat, number);
+                    }
                 }
-                else
-                {
-                    Integer number = mxPlatMap.get(keyPlat);
-                    number++;
-                    mxPlatMap.replace(keyPlat, number);
-                }
-    
-    
-                //记录所有的设备
-                String deviceID = elements[NFInputType.PlayerRegisterType.DeviceId.getId()];
-                mxDevicesList.add(deviceID);
             }
         }
-
     }
 
     @Override
     public void doBusinessAnalyse()
     {
+        //for all devices
+        List<String> strList = logModule.getLogData(NFLogType.LOG_REGISTER);
+        if (strList != null)
+        {
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerRegisterType.values().length)
+                {
+                    String deviceID = elements[NFInputType.PlayerRegisterType.DeviceId.getId()];
+                    nosqlBzModule.addToTotalDeviceList(deviceID);
+                }
+            }
+        }
+        
         for (Map.Entry<String, Integer> entry : mxPlatMap.entrySet())
         {
             NFDailyNewUsersModel xModel = new NFDailyNewUsersModel();
-
+            
             xModel.setAppid("");
             xModel.setZoneid("");
             xModel.setPlat(entry.getKey());
             xModel.setNumber(entry.getValue());
-            xModel.setTotal_number(mxLineList.size());
+            xModel.setToday_number(mxLineList.size());
+            xModel.setTotal_number(nosqlBzModule.getTotalUserCount());
+            xModel.setTotal_device(nosqlBzModule.getTotalDeviceCount());
 
             Calendar calendar = Calendar.getInstance();
             calendar.add(Calendar.DAY_OF_YEAR, -1);
@@ -140,11 +238,34 @@ public class NFDailyNewUsersModule implements NFIDailyNewUsersModule
             dailyNewUsersDAO.saveAndFlush(mxModelList.get(i));
         }
         
-        //storage all new device
-        for (int i = 0; i < mxDevicesList.size(); ++i)
+        //存储所有的新增账号（按day存，方便计算留存）
+        for (int i = 0; i < mxLineList.size(); ++i)
         {
-            String device = mxDevicesList.get(i);
-            nosqlBzModule.addToTotalDeviceList(device);
+            String line = mxLineList.get(i);
+            String[] elements = StringUtils.split(line,'|');
+            if (elements.length == NFInputType.PlayerLogin.values().length)
+            {
+                //2分析平台
+                String keyPlat = elements[NFInputType.PlayerLogin.PlatID.getId()];
+                String openID = elements[NFInputType.PlayerLogin.Openid.getId()];
+                String loginCount = elements[NFInputType.PlayerLogin.LoginCount.getId()];
+                
+            }
+        }
+    
+        //storage all new user
+        List<String> xUserList = getNewUserList();
+        
+        for (int i = 0; i < xUserList.size(); ++i)
+        {
+            String userID = xUserList.get(i);
+            //总用户
+            nosqlBzModule.addToTotalUserList(userID, 0);
+        
+            //每日用户
+            Calendar calendar = Calendar.getInstance();
+            calendar.add(Calendar.DAY_OF_YEAR, -1);
+            nosqlBzModule.addToDailyNewUserList(calendar, userID);
         }
     }
 }

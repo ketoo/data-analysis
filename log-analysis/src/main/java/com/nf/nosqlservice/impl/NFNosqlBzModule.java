@@ -21,17 +21,70 @@ public class NFNosqlBzModule implements NFINosqlBzModule
     private String strTotalUserKey = "TotalUserKey";
     private String strTotalDeviceKey = "TotalDeviceKey";
     private String strDailyUserKey = "DailyUserKey";
+    private String strTotalUserOnlineTime = "TotalUserOnlineTime";
     
     @Override
-    public void addToTotalUserList(String user)
+    public void addToTotalUserList(String user, int onlineTime)
     {
-        nosqlModule.hSet(strTotalUserKey, user, "1");
+        Integer time = onlineTime;
+        if (!nosqlModule.existsKey(strTotalUserKey))
+        {
+            nosqlModule.hSet(strTotalUserKey, user, time.toString());
+        }
+        else
+        {
+            if (nosqlModule.hExists(strTotalUserKey, user))
+            {
+                String strValue = nosqlModule.hGet(strTotalUserKey, user);
+                Integer lastOnlineTime = Integer.valueOf(strValue);
+    
+                lastOnlineTime += time;
+                
+                nosqlModule.hSet(strTotalUserKey, user, lastOnlineTime.toString());
+            }
+            else
+            {
+                nosqlModule.hSet(strTotalUserKey, user, time.toString());
+            }
+        }
+        
+        if (time > 0)
+        {
+            if (!nosqlModule.existsKey(strTotalUserOnlineTime))
+            {
+                nosqlModule.setValue(strTotalUserOnlineTime, time.toString());
+            }
+            else
+            {
+                String strValue = nosqlModule.getValue(strTotalUserOnlineTime);
+                Integer lastOnlineTime = Integer.valueOf(strValue);
+    
+                lastOnlineTime += time;
+    
+                nosqlModule.setValue(strTotalUserOnlineTime, lastOnlineTime.toString());
+            }
+        }
     }
     
     @Override
     public int getTotalUserCount()
     {
         return nosqlModule.hLength(strTotalUserKey);
+    }
+    
+    @Override
+    public int getAVGUserTotalOnlineTime()
+    {
+        int nAllUserCount = getTotalUserCount();
+        String strValue = nosqlModule.getValue(strTotalUserOnlineTime);
+        Integer allOnlineTime = Integer.valueOf(strValue);
+    
+        if (nAllUserCount > 0)
+        {
+            return allOnlineTime / nAllUserCount;
+        }
+        
+        return 0;
     }
     
     @Override
@@ -47,7 +100,13 @@ public class NFNosqlBzModule implements NFINosqlBzModule
     }
     
     @Override
-    public void addToDailyUserList(Calendar calendar, String user)
+    public boolean existDevice(String device)
+    {
+        return nosqlModule.hExists(strTotalDeviceKey, device);
+    }
+    
+    @Override
+    public void addToDailyNewUserList(Calendar calendar, String user)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String key = strDailyUserKey + sdf.format(calendar.getTime());
@@ -56,7 +115,7 @@ public class NFNosqlBzModule implements NFINosqlBzModule
     }
     
     @Override
-    public int getDailyUserCount(Calendar calendar)
+    public int getDailyNewUserCount(Calendar calendar)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String key = strDailyUserKey + sdf.format(calendar.getTime());
@@ -65,7 +124,7 @@ public class NFNosqlBzModule implements NFINosqlBzModule
     }
     
     @Override
-    public boolean existDailyUser(Calendar calendar, String user)
+    public boolean existDailyNewUser(Calendar calendar, String user)
     {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String key = strDailyUserKey + sdf.format(calendar.getTime());

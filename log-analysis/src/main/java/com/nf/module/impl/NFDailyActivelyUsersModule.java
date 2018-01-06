@@ -40,7 +40,6 @@ public class NFDailyActivelyUsersModule implements NFIDailyActivelyUsersModule
     //for saving
     private static List<NFDailyActivelyUsersModel> mxModelList = new ArrayList<>();
     
-    private static List<String> mxUserList = new ArrayList<>();
     
     private static float mfAvgTime = 0;
     
@@ -53,7 +52,116 @@ public class NFDailyActivelyUsersModule implements NFIDailyActivelyUsersModule
         mxPlatMap.clear();
         mxModelList.clear();
     }
-
+    
+    @Override
+    public  List<String> getLoginedUserList()
+    {
+        HashMap<String, Integer> newUserList = new HashMap<String, Integer>();
+    
+        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGIN);
+        if (strList != null)
+        {
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+            
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerLogin.values().length)
+                {
+                    String openID = elements[NFInputType.PlayerLogin.Openid.getId()];
+                
+                    //登录次数为0-1次的，才是第一次登录，新增用户
+                    if (newUserList.containsKey(openID))
+                    {
+                        newUserList.put(openID, 0);
+                    }
+                }
+            }
+        }
+    
+        List<String> userList = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry: newUserList.entrySet())
+        {
+            userList.add(entry.getKey());
+        }
+    
+        return userList;
+    }
+    
+    @Override
+    public void map()
+    {
+        //1 去重
+        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGIN);
+        if (strList != null)
+        {
+            Map<String, Integer> xNewUserMap = new HashMap<String, Integer>();
+            
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+                
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerLogin.values().length)
+                {
+                    String key = elements[NFInputType.PlayerLogin.Openid.getId()];
+                    if (!xNewUserMap.containsKey(key))
+                    {
+                        xNewUserMap.put(key, 1);
+                        mxLineList.add(line);
+                    }
+                }
+            }
+        }
+    }
+    
+    @Override
+    public void reduce()
+    {
+        for (int i = 0; i < mxLineList.size(); ++i)
+        {
+            String line = mxLineList.get(i);
+            String[] elements = StringUtils.split(line,'|');
+            if (elements.length == NFInputType.PlayerLogin.values().length)
+            {
+                //2分析平台
+                String keyPlat = elements[NFInputType.PlayerLogin.PlatID.getId()];
+                if (!mxPlatMap.containsKey(keyPlat))
+                {
+                    mxPlatMap.put(keyPlat, 1);
+                }
+                else
+                {
+                    Integer number = mxPlatMap.get(keyPlat);
+                    number++;
+                    mxPlatMap.replace(keyPlat, number);
+                }
+            }
+        }
+        
+        double fTotalOnlinetime = 0;
+        //统计平均时间--logout
+        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGOUT);
+        if (strList != null)
+        {
+            for (int i = 0; i < strList.size(); ++i)
+            {
+                String line = strList.get(i);
+                String[] elements = StringUtils.split(line, '|');
+                if (elements.length == NFInputType.PlayerLogout.values().length)
+                {
+                    String onlineTime = elements[NFInputType.PlayerLogout.OnlineTime.getId()];
+                    
+                    fTotalOnlinetime += Float.parseFloat(onlineTime);
+                }
+            }
+        }
+        
+        if (mxLineList.size() > 0)
+        {
+            mfAvgTime = (float)(fTotalOnlinetime / mxLineList.size());
+        }
+    }
 
     @Override
     public void doBusinessAnalyse()
@@ -84,96 +192,6 @@ public class NFDailyActivelyUsersModule implements NFIDailyActivelyUsersModule
         {
             dailyActivelyUsesDAO.saveAndFlush(mxModelList.get(i));
         }
-        
-        //storage all new user
-        for (int i = 0; i < mxUserList.size(); ++i)
-        {
-            String userID = mxUserList.get(i);
-            //总用户
-            nosqlBzModule.addToTotalUserList(userID);
-    
-            //每日用户
-            Calendar calendar = Calendar.getInstance();
-            calendar.add(Calendar.DAY_OF_YEAR, -1);
-            nosqlBzModule.addToDailyUserList(calendar, userID);
-        }
     }
 
-    @Override
-    public void map()
-    {
-        //1 去重
-        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGIN);
-        if (strList != null)
-        {
-            Map<String, Integer> xNewUserMap = new HashMap<String, Integer>();
-        
-            for (int i = 0; i < strList.size(); ++i)
-            {
-                String line = strList.get(i);
-            
-                String[] elements = StringUtils.split(line, '|');
-                if (elements.length == NFInputType.PlayerLogin.values().length)
-                {
-                    String key = elements[NFInputType.PlayerLogin.Openid.getId()];
-                    if (!xNewUserMap.containsKey(key))
-                    {
-                        xNewUserMap.put(key, 1);
-                        mxLineList.add(line);
-                    }
-                }
-            }
-        }
-    }
-
-    @Override
-    public void reduce()
-    {
-        for (int i = 0; i < mxLineList.size(); ++i)
-        {
-            String line = mxLineList.get(i);
-            String[] elements = StringUtils.split(line,'|');
-            if (elements.length == NFInputType.PlayerLogin.values().length)
-            {
-                //2分析平台
-                String keyPlat = elements[NFInputType.PlayerLogin.PlatID.getId()];
-                if (!mxPlatMap.containsKey(keyPlat))
-                {
-                    mxPlatMap.put(keyPlat, 1);
-                }
-                else
-                {
-                    Integer number = mxPlatMap.get(keyPlat);
-                    number++;
-                    mxPlatMap.replace(keyPlat, number);
-                }
-    
-                String openID = elements[NFInputType.PlayerLogin.Openid.getId()];
-                mxUserList.add(openID);
-            }
-        }
-        
-        double fTotalOnlinetime = 0;
-        //统计平均时间
-        List<String> strList = logModule.getLogData(NFLogType.LOG_LOGOUT);
-        if (strList != null)
-        {
-            for (int i = 0; i < strList.size(); ++i)
-            {
-                String line = mxLineList.get(i);
-                String[] elements = StringUtils.split(line, '|');
-                if (elements.length == NFInputType.PlayerLogout.values().length)
-                {
-                    String onlineTime = elements[NFInputType.PlayerLogout.OnlineTime.getId()];
-    
-                    fTotalOnlinetime += Float.parseFloat(onlineTime);
-                }
-            }
-        }
-        
-        if (mxLineList.size() > 0)
-        {
-            mfAvgTime = (float)(fTotalOnlinetime / mxLineList.size());
-        }
-    }
 }

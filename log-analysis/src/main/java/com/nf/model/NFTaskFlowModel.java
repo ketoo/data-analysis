@@ -27,11 +27,11 @@ public class NFTaskFlowModel
 
     private String time;
 
-    private Integer day;
-
     private Integer total_number;
 
-    private Integer task_type;
-
-    private Integer task_id;
+    private String task_type;
+    
+    private String task_id;
+    
+    private Integer task_status;
 }

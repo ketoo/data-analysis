@@ -175,9 +175,10 @@ public class NFInputType
         RoleID(8),
         TaskType(9),
         TaskId(10),
-        TaskArg1(11),
-        TaskArg2(12),
-        TaskArg3(13);
+        TaskStatus(11),
+        TaskArg1(12),
+        TaskArg2(13),
+        TaskArg3(14);
 
 
         TaskFlow(int code)

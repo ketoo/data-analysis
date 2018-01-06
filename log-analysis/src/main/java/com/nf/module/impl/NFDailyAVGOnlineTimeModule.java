@@ -4,7 +4,6 @@ import com.nf.DAO.NFDailyAVGOnlineTimeDAO;
 import com.nf.comm.NFInputType;
 import com.nf.comm.NFLogType;
 import com.nf.model.NFDailyAVGOnlineTimeModel;
-import com.nf.model.NFDailyActivelyUsersModel;
 import com.nf.module.NFIDailyAVGOnlineTimeModule;
 import com.nf.module.NFILogModule;
 import org.apache.commons.lang.StringUtils;
@@ -36,7 +35,11 @@ public class NFDailyAVGOnlineTimeModule implements NFIDailyAVGOnlineTimeModule
     @Override
     public void reset()
     {
+        mxModelList.clear();
         mxLineList.clear();
+    
+        mfAVGTime = 0;
+        mfAVGLevel = 0;
     }
 
 

@@ -29,7 +29,7 @@ public class NFBlockFlowModel
 
     private Integer total_number;
 
-    private Integer error_id;
+    private String error_id;
 
-    private Integer key_id;
+    private String key_id;
 }

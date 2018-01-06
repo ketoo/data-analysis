@@ -36,6 +36,9 @@ public class NFDailyNewUsersModel
 
     //历史所有新增,不分渠道
     private Integer total_number;
+    
+    //历史所有新增,不分渠道
+    private Integer total_device;
 
 
 }

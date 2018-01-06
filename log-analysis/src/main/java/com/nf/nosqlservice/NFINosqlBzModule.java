@@ -7,14 +7,16 @@ import java.util.Calendar;
  */
 public interface NFINosqlBzModule
 {
-    void addToTotalUserList(String user);
+    void addToTotalUserList(String user, int onlineTime);
     int getTotalUserCount();
+    int getAVGUserTotalOnlineTime();
     
     void addToTotalDeviceList(String device);
     int getTotalDeviceCount();
+    boolean existDevice(String device);
     
     
-    void addToDailyUserList(Calendar calendar, String user);
-    int getDailyUserCount(Calendar calendar);
-    boolean existDailyUser(Calendar calendar, String user);
+    void addToDailyNewUserList(Calendar calendar, String user);
+    int getDailyNewUserCount(Calendar calendar);
+    boolean existDailyNewUser(Calendar calendar, String user);
 }

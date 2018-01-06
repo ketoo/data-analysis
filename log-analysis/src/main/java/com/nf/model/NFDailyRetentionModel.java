@@ -29,7 +29,7 @@ public class NFDailyRetentionModel
 
     private Integer day;//几日留存，次日就是2，7日就是7
     
-    private Integer total_number;//留存用户数量，分渠道
+    private Integer total_number;
     
-    private float rate;//留存率，分渠道
+    private float rate;
 }

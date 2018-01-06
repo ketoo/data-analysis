@@ -20,7 +20,7 @@ import java.util.*;
 public class NFLogModule implements NFILogModule
 {
     private static Map<NFLogType, List<String>> mxLogData = new HashMap<NFLogType, List<String>>();
-
+    private int mnMinElement = 5;
 
     @Override
     public void reset()
@@ -48,12 +48,12 @@ public class NFLogModule implements NFILogModule
     @Override
     public void map()
     {
-
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DAY_OF_YEAR, -1);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String time = sdf.format(calendar.getTime());
-        String filePath = "./" + time;
+        //String filePath = "./" + time;
+        String filePath = "./logs";
 
         File root = new File(filePath);
         File[] files = root.listFiles();
@@ -66,11 +66,13 @@ public class NFLogModule implements NFILogModule
         {
             if(file.isDirectory())
             {
-                System.out.println("显示"+filePath+"下所有子目录及其文件"+file.getAbsolutePath());
+                continue;
             }
-            else
+            
+            if (file.getName().indexOf("info") < 0
+                    ||file.getName().indexOf(time) < 0 )
             {
-                System.out.println("显示"+filePath+"下所有子目录"+file.getAbsolutePath());
+                continue;
             }
 
             try
@@ -90,22 +92,24 @@ public class NFLogModule implements NFILogModule
                 while ((lineTxt = bufferedReader.readLine()) != null)
                 {
                     String[] elements = StringUtils.split(lineTxt, '|');
-                    //String[] elements = lineTxt.split("|");
-                    String strKey = elements[0];
-
-                    NFLogType logType = logTypeMap.get(strKey);
-                    if (logType != null)
+                    if (elements.length > mnMinElement)
                     {
-                        List<String> logLineList = mxLogData.get(logType);
-                        if (logLineList == null)
+                        //String[] elements = lineTxt.split("|");
+                        String strKey = elements[0];
+    
+                        NFLogType logType = logTypeMap.get(strKey);
+                        if (logType != null)
                         {
-                            logLineList = new ArrayList<>();
-                            mxLogData.put(logType, logLineList);
+                            List<String> logLineList = mxLogData.get(logType);
+                            if (logLineList == null)
+                            {
+                                logLineList = new ArrayList<>();
+                                mxLogData.put(logType, logLineList);
+                            }
+        
+                            logLineList.add(lineTxt);
                         }
-
-                        logLineList.add(lineTxt);
                     }
-
                 }
 
                 bufferedReader.close();

@@ -19,6 +19,7 @@ public class NFApplication extends SpringBootServletInitializer implements Embed
     
     public static void main(String [] args)
     {
+        
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DAY_OF_YEAR, -1);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

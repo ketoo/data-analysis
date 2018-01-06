@@ -31,9 +31,10 @@ public class NFAnalysisController
         logger.info("doAnalysis");
         
         ResProgressBody xResProgressBody = new ResProgressBody();
-
-
-
+        xResProgressBody.setAnalysingModule("");
+        xResProgressBody.setDate(date);
+        xResProgressBody.setFProgress(0.7f);
+        
         return new ResponseEntity<>(xResProgressBody, HttpStatus.OK);
     }
 }

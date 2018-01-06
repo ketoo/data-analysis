@@ -1,11 +1,13 @@
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId1
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId2
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId3
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId44
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId44
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId4
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId5
-PlayerRegister|EventTime|GameAppid|PlatID|ClientVersion|SystemSoftware|Network|RegChannel|CpuHardware|Memory|GLRender|GLVersion|DeviceId5
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid1|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid2|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid3|9|RoleID|ErrID2|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid4|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID4|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
+BlockFlow|GameSvrId|2018-01-05|GameAppid|PlatID|ZoneAreaID|Openid5|9|RoleID|ErrID1|ErrArg1|ErrArg2|ErrArg3
 
 
 
