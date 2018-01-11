@@ -40,6 +40,11 @@ public class NFAnalysisController
         //start do analysis with date
         //String dateStr="2012-08-02";
         String dateStr = date;
+        if (dateStr == logModule.getNowCalendar())
+        {
+            return new ResponseEntity<>(date, HttpStatus.BAD_REQUEST);
+        }
+        
         String pattern = "yyyy-MM-dd";
         SimpleDateFormat dateFormat=new SimpleDateFormat(pattern);
         try

@@ -12,6 +12,8 @@ public interface NFILogModule extends NFIBAModule
 {
     List<String> getLogData(NFLogType type);
     String getLogDate();
+    String getNowCalendar();
+    
     Calendar getLogCalendar();
     void setLogDate(Calendar cl);
     

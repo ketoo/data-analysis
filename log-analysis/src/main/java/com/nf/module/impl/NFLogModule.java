@@ -20,7 +20,8 @@ import java.util.*;
 public class NFLogModule implements NFILogModule
 {
     private static Map<NFLogType, List<String>> mxLogData = new HashMap<NFLogType, List<String>>();
-    private static Calendar calendar;
+    private static Calendar mxLogCalendar;
+    private static Calendar mxNowCalendar = Calendar.getInstance();
     private static String mstrProgress;
     private static String mstrModuleName;
     
@@ -54,19 +55,26 @@ public class NFLogModule implements NFILogModule
     {
         //calendar.add(Calendar.DAY_OF_YEAR, -1);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        return sdf.format(calendar.getTime());
+        return sdf.format(mxLogCalendar.getTime());
     }
     
     @Override
     public Calendar getLogCalendar()
     {
-        return calendar;
+        return mxLogCalendar;
+    }
+    
+    @Override
+    public String getNowCalendar()
+    {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(mxNowCalendar.getTime());
     }
     
     @Override
     public void setLogDate(Calendar cl)
     {
-        calendar = cl;
+        mxLogCalendar = cl;
     }
     
     @Override
