@@ -2,6 +2,7 @@ package com.nf.module;
 
 import com.nf.comm.NFLogType;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -10,4 +11,15 @@ import java.util.List;
 public interface NFILogModule extends NFIBAModule
 {
     List<String> getLogData(NFLogType type);
+    String getLogDate();
+    Calendar getLogCalendar();
+    void setLogDate(Calendar cl);
+    
+    
+    void setLogBAProgress(String strProgress);
+    String getLogBAProgress();
+    
+    void setLogBAProgressModule(String moduleName);
+    String getLogBAProgressModule();
+
 }

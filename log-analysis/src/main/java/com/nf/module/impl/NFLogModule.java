@@ -20,6 +20,10 @@ import java.util.*;
 public class NFLogModule implements NFILogModule
 {
     private static Map<NFLogType, List<String>> mxLogData = new HashMap<NFLogType, List<String>>();
+    private static Calendar calendar;
+    private static String mstrProgress;
+    private static String mstrModuleName;
+    
     private int mnMinElement = 5;
 
     @Override
@@ -44,7 +48,51 @@ public class NFLogModule implements NFILogModule
     {
         return mxLogData.get(type);
     }
-
+    
+    @Override
+    public String getLogDate()
+    {
+        //calendar.add(Calendar.DAY_OF_YEAR, -1);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(calendar.getTime());
+    }
+    
+    @Override
+    public Calendar getLogCalendar()
+    {
+        return calendar;
+    }
+    
+    @Override
+    public void setLogDate(Calendar cl)
+    {
+        calendar = cl;
+    }
+    
+    @Override
+    public void setLogBAProgress(String strProgress)
+    {
+        mstrProgress = strProgress;
+    }
+    
+    @Override
+    public String getLogBAProgress()
+    {
+        return mstrProgress;
+    }
+    
+    @Override
+    public void setLogBAProgressModule(String moduleName)
+    {
+        mstrModuleName = moduleName;
+    }
+    
+    @Override
+    public String getLogBAProgressModule()
+    {
+        return mstrModuleName;
+    }
+    
     @Override
     public void map()
     {

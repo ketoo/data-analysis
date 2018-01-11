@@ -6,7 +6,6 @@ import com.nf.comm.NFLogType;
 import com.nf.model.NFDailyActivelyUsersModel;
 import com.nf.module.NFIDailyActivelyUsersModule;
 import com.nf.module.NFILogModule;
-import com.nf.nosqlservice.NFINosqlBzModule;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,8 +24,8 @@ public class NFDailyActivelyUsersModule implements NFIDailyActivelyUsersModule
     @Autowired
     private NFILogModule logModule;
     
-    @Autowired
-    private NFINosqlBzModule nosqlBzModule;
+    //@Autowired
+    //private NFINosqlBzModule nosqlBzModule;
     
     
     @Autowired

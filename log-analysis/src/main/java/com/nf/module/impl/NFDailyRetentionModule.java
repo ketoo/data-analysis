@@ -44,7 +44,6 @@ public class NFDailyRetentionModule implements NFIDailyRetentionModule
     //for saving
     private static List<NFDailyRetentionModel> mxModelList = new ArrayList<>();
     
-    
     @Override
     public void reset()
     {

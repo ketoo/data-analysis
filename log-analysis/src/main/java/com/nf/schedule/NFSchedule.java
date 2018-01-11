@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by lushenghuang on 20/12/17.
@@ -17,6 +19,7 @@ import java.util.Date;
 @Service
 public class NFSchedule
 {
+    static List<NFIBAModule> mxModuleList =  new ArrayList<>();
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
     public final static long ONE_MIN =  60 * 1000;
@@ -87,80 +90,55 @@ public class NFSchedule
 
         //if (!isSameDate)
         {
-            DoBATask();
+            Calendar calendar = Calendar.getInstance();
+            calendar.add(Calendar.DAY_OF_YEAR, -1);
+            DoBATask(calendar);
         }
     }
-
-    private void DoBATask()
+    
+    private void initModuleList()
     {
-        logModule.map();
-        logModule.reduce();
-        logModule.doBusinessAnalyse();
-        logModule.saveBusinessAnalyseResult();
-
-        activityFlowModule.map();
-        activityFlowModule.reduce();
-        activityFlowModule.doBusinessAnalyse();
-        activityFlowModule.saveBusinessAnalyseResult();
-
-        apiFlowModule.map();
-        apiFlowModule.reduce();
-        apiFlowModule.doBusinessAnalyse();
-        apiFlowModule.saveBusinessAnalyseResult();
-
-        blockFlowModule.map();
-        blockFlowModule.reduce();
-        blockFlowModule.doBusinessAnalyse();
-        blockFlowModule.saveBusinessAnalyseResult();
-
-        dailyActivelyUsersModule.map();
-        dailyActivelyUsersModule.reduce();
-        dailyActivelyUsersModule.doBusinessAnalyse();
-        dailyActivelyUsersModule.saveBusinessAnalyseResult();
-
-        dailyAVGOnlineTimeModule.map();
-        dailyAVGOnlineTimeModule.reduce();
-        dailyAVGOnlineTimeModule.doBusinessAnalyse();
-        dailyAVGOnlineTimeModule.saveBusinessAnalyseResult();
-
-        dailyNewUsersModule.map();
-        dailyNewUsersModule.reduce();
-        dailyNewUsersModule.doBusinessAnalyse();
-        dailyNewUsersModule.saveBusinessAnalyseResult();
-
-        dailyRetentionModule.map();
-        dailyRetentionModule.reduce();
-        dailyRetentionModule.doBusinessAnalyse();
-        dailyRetentionModule.saveBusinessAnalyseResult();
-
-        itemFlowModule.map();
-        itemFlowModule.reduce();
-        itemFlowModule.doBusinessAnalyse();
-        itemFlowModule.saveBusinessAnalyseResult();
-
-        moneyFlowModule.map();
-        moneyFlowModule.reduce();
-        moneyFlowModule.doBusinessAnalyse();
-        moneyFlowModule.saveBusinessAnalyseResult();
-
-        payFlowModule.map();
-        payFlowModule.reduce();
-        payFlowModule.doBusinessAnalyse();
-        payFlowModule.saveBusinessAnalyseResult();
-
-        playerBehaviourFlowModule.map();
-        playerBehaviourFlowModule.reduce();
-        playerBehaviourFlowModule.doBusinessAnalyse();
-        playerBehaviourFlowModule.saveBusinessAnalyseResult();
-
-        roundFlowModule.map();
-        roundFlowModule.reduce();
-        roundFlowModule.doBusinessAnalyse();
-        roundFlowModule.saveBusinessAnalyseResult();
-
-        taskFlowModule.map();
-        taskFlowModule.reduce();
-        taskFlowModule.doBusinessAnalyse();
-        taskFlowModule.saveBusinessAnalyseResult();
+        mxModuleList.add(logModule);
+        mxModuleList.add(dailyNewUsersModule);
+        mxModuleList.add(dailyRetentionModule);
+        mxModuleList.add(activityFlowModule);
+        mxModuleList.add(apiFlowModule);
+        mxModuleList.add(blockFlowModule);
+        mxModuleList.add(dailyActivelyUsersModule);
+        mxModuleList.add(dailyAVGOnlineTimeModule);
+        mxModuleList.add(itemFlowModule);
+        mxModuleList.add(moneyFlowModule);
+        mxModuleList.add(payFlowModule);
+        mxModuleList.add(playerBehaviourFlowModule);
+        mxModuleList.add(roundFlowModule);
+        mxModuleList.add(taskFlowModule);
+    
+    }
+    
+    public void DoBATask(Calendar cl)
+    {
+        if (mxModuleList.size() <= 0)
+        {
+            initModuleList();
+        }
+    
+        logModule.setLogDate(cl);
+        
+        logModule.setLogBAProgress(String.format("%d/%d", 0, mxModuleList.size()));
+        logModule.setLogBAProgressModule("");
+        
+        for (int i = 0; i < mxModuleList.size(); ++i)
+        {
+            mxModuleList.get(i).map();
+            mxModuleList.get(i).reduce();
+            mxModuleList.get(i).doBusinessAnalyse();
+            mxModuleList.get(i).saveBusinessAnalyseResult();
+    
+            String strProgress = String.format("%d/%d", i, mxModuleList.size());
+            
+            logModule.setLogBAProgress(strProgress);
+            logModule.setLogBAProgressModule(mxModuleList.get(i).getClass().getName());
+        }
+    
     }
 }
