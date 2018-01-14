@@ -83,6 +83,9 @@ public class NFBlockFlowModule implements NFIBlockFlowModule
     @Override
     public void doBusinessAnalyse()
     {
+        List<String> strList = logModule.getLogData(NFLogType.LOG_API);
+        Integer total = strList.size();
+        
         for (Map.Entry<String, List<String>> entry : mxErrIDList.entrySet())
         {
             String taskType = entry.getKey();
@@ -95,7 +98,8 @@ public class NFBlockFlowModule implements NFIBlockFlowModule
         
             NFBlockFlowModel xModel = new NFBlockFlowModel();
             xModel.setTime(sdf.format(calendar.getTime()));
-            xModel.setTotal_number(lineList.size());
+            xModel.setNumber(lineList.size());
+            xModel.setTotal_number(total);
             xModel.setError_id(taskType);
             mxModelList.add(xModel);
         }
@@ -112,7 +116,8 @@ public class NFBlockFlowModule implements NFIBlockFlowModule
         
             NFBlockFlowModel xModel = new NFBlockFlowModel();
             xModel.setTime(sdf.format(calendar.getTime()));
-            xModel.setTotal_number(lineList.size());
+            xModel.setNumber(lineList.size());
+            xModel.setTotal_number(total);
             xModel.setKey_id(taskType);
             mxModelList.add(xModel);
         }

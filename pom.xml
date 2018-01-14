@@ -13,7 +13,6 @@
     <modules>
         <module>log-service</module>
         <module>log-analysis</module>
-        <module>test</module>
     </modules>
 
     <build>

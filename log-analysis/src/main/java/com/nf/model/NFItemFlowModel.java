@@ -26,8 +26,9 @@ public class NFItemFlowModel
     private String zoneid;
 
     private String time;
-
+    
     private Integer total_number;
+    private Integer number;
 
     private float avg_level;
     private Integer item_type;

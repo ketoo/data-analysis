@@ -26,8 +26,9 @@ public class NFBlockFlowModel
     private String zoneid;
 
     private String time;
-
+    
     private Integer total_number;
+    private Integer number;
 
     private String error_id;
 

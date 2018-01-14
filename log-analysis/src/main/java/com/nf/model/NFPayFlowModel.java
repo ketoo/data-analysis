@@ -26,8 +26,9 @@ public class NFPayFlowModel
     private String zoneid;
 
     private String time;
-
+    
     private Integer total_number;
+    private Integer number;
 
     private Integer pay_type;
     private String pay_item_id;

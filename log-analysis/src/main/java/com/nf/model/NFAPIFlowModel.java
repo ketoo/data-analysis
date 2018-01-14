@@ -26,10 +26,11 @@ public class NFAPIFlowModel
     private String zoneid;
 
     private String time;
-
     private Integer total_number;
-    private Integer api_type;
-    private Integer api_id;
+
+    private Integer number;
+    private String api_type;
+    private String api_id;
     private float avg_online_time;
     private float avg_level;
     private float avg_login_count;

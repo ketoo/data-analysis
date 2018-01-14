@@ -4,7 +4,6 @@ import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * Created by lushenghuang on 20/12/17.
@@ -27,8 +26,9 @@ public class NFMoneyFlowModel
     private String zoneid;
 
     private String time;
-
+    
     private Integer total_number;
+    private Integer number;
 
     private float avg_level;
     private float avg_after_money;

@@ -26,8 +26,9 @@ public class NFActivityFlowModel
     private String zoneid;
 
     private String time;
-
+    
     private Integer total_number;
+    private Integer number;
 
     private float avg_level;
 
