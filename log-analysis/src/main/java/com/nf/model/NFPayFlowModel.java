@@ -30,8 +30,13 @@ public class NFPayFlowModel
     private Integer total_number;
     private Integer number;
 
-    private Integer pay_type;
+    private String pay_type;
     private String pay_item_id;
+    private String reason;
+    private String subReason;
+    private String flowType;
+    private String moneyType;
+    
     private float avg_online_time;
     private float avg_level;
     private float avg_login_count;

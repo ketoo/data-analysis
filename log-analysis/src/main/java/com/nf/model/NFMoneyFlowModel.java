@@ -30,11 +30,12 @@ public class NFMoneyFlowModel
     private Integer total_number;
     private Integer number;
 
+    private String reason;
+    private String sub_reason;
+    private String flow_type;
+    private String money_type;
+    
     private float avg_level;
     private float avg_after_money;
     private float avg_money;
-    private Integer reason;
-    private Integer sub_reason;
-    private Integer flow_type;
-    private Integer money_type;
 }

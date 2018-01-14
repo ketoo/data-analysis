@@ -30,12 +30,14 @@ public class NFItemFlowModel
     private Integer total_number;
     private Integer number;
 
-    private float avg_level;
-    private Integer item_type;
+    private String item_type;
     private String item_id;
+    private String reason;
+    private String sub_reason;
+    private String money_type;
+    private String flow_type;
+    
+    private float avg_level;
     private float avg_count;
-    private Integer reason;
-    private Integer sub_reason;
-    private Integer money_type;
     private float avg_money;
 }
