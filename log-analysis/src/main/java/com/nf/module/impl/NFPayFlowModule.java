@@ -1,6 +1,5 @@
 package com.nf.module.impl;
 
-import com.nf.DAO.NFMoneyFlowDAO;
 import com.nf.DAO.NFPayFlowDAO;
 import com.nf.comm.NFInputType;
 import com.nf.comm.NFLogType;
@@ -135,12 +134,12 @@ public class NFPayFlowModule implements NFIPayFlowModule
                 xModel.setReason3(entry.getKey());
             }
     
-            Integer online_time;
-            Integer level;
-            Integer login_count;
-            Integer pay_money;
-            Integer pay_total_money;
-            Integer pay_count;
+            Integer online_time = 0;
+            Integer level = 0;
+            Integer login_count = 0;
+            Integer pay_money = 0;
+            Integer pay_total_money = 0;
+            Integer pay_count = 0;
             for (int i= 0; i < entry.getValue().size(); ++i)
             {
                 String[] elements = StringUtils.split(entry.getValue().get(i),'|');
