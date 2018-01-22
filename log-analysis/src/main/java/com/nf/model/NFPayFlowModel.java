@@ -26,16 +26,15 @@ public class NFPayFlowModel
     private String zoneid;
 
     private String time;
-    
-    private Integer total_number;
+
+    //此类类型的成功或者失败
     private Integer number;
 
-    private String pay_type;
     private String pay_item_id;
-    private String reason;
-    private String subReason;
+    private String reason1;
+    private String reason2;
+    private String reason3;
     private String flowType;
-    private String moneyType;
     
     private float avg_online_time;
     private float avg_level;

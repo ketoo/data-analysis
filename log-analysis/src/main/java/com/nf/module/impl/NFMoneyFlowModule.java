@@ -68,7 +68,15 @@ public class NFMoneyFlowModule implements NFIMoneyFlowModule
     
         mxModelList.clear();
     }
-    private void doBusinessAnalyse(String flowType, Map<String, List<String> > map)
+    
+    enum MapType
+    {
+        ReasonMap,
+        SubReasonMap,
+        MoneyTypeMap,
+    }
+    
+    private void doBusinessAnalyse(String flowType, MapType eType, Map<String, List<String> > map)
     {
         for (Map.Entry<String, List<String>> entry : map.entrySet())
         {
@@ -84,10 +92,24 @@ public class NFMoneyFlowModule implements NFIMoneyFlowModule
             calendar.add(Calendar.DAY_OF_YEAR, -1);
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             xModel.setTime(sdf.format(calendar.getTime()));
-            
+    
             xModel.setReason("");
             xModel.setSub_reason("");
             xModel.setMoney_type("");
+    
+            if (eType == MapType.MoneyTypeMap)
+            {
+                xModel.setMoney_type(entry.getKey());
+            }
+            if (eType == MapType.SubReasonMap)
+            {
+                xModel.setSub_reason(entry.getKey());
+            }
+            if (eType == MapType.ReasonMap)
+            {
+                xModel.setReason(entry.getKey());
+            }
+    
             xModel.setFlow_type(flowType);
             
             Integer level = 0;
@@ -122,13 +144,13 @@ public class NFMoneyFlowModule implements NFIMoneyFlowModule
     @Override
     public void doBusinessAnalyse()
     {
-        doBusinessAnalyse("0", addItem.mxReasonMap);
-        doBusinessAnalyse("0", addItem.mxSubReasonMap);
-        doBusinessAnalyse("0", addItem.mxMoneyTypeMap);
+        doBusinessAnalyse("0", MapType.ReasonMap, addItem.mxReasonMap);
+        doBusinessAnalyse("0", MapType.SubReasonMap, addItem.mxSubReasonMap);
+        doBusinessAnalyse("0", MapType.MoneyTypeMap, addItem.mxMoneyTypeMap);
     
-        doBusinessAnalyse("1", reduceItem.mxReasonMap);
-        doBusinessAnalyse("1", reduceItem.mxSubReasonMap);
-        doBusinessAnalyse("1", reduceItem.mxMoneyTypeMap);
+        doBusinessAnalyse("1", MapType.ReasonMap, reduceItem.mxReasonMap);
+        doBusinessAnalyse("1", MapType.SubReasonMap, reduceItem.mxSubReasonMap);
+        doBusinessAnalyse("1", MapType.MoneyTypeMap, reduceItem.mxMoneyTypeMap);
     }
 
     @Override
