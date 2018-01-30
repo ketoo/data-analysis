@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/log-analysis/log-analysis.iml" filepath="$PROJECT_DIR$/log-analysis/log-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-analysis/log-analysis.iml" filepath="$PROJECT_DIR$/log-analysis/log-analysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-service/log-service.iml" filepath="$PROJECT_DIR$/log-service/log-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-analysis/log-service.iml" filepath="$PROJECT_DIR$/log-analysis/log-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-system.iml" filepath="$PROJECT_DIR$/log-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/log-system.iml" filepath="$PROJECT_DIR$/.idea/log-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-service/merchant-service.iml" filepath="$PROJECT_DIR$/log-service/merchant-service.iml" />
     </modules>
