@@ -149,7 +149,9 @@ public class NFInputType
         Level(7),
         RoleID(8),
         DeviceId(9),
-        BehaviourId(10);
+        BehaviourId(10),
+        MapId(11),
+        TypeId(12);
 
         PlayerBehaviourFlow(int code)
         {
