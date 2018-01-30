@@ -2,10 +2,11 @@ package com.nf;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.text.SimpleDateFormat;
@@ -13,7 +14,10 @@ import java.util.Calendar;
 
 @EnableScheduling
 @SpringBootApplication
-public class NFLogApp extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan(basePackages="com.nf.*")
+public class NFLogApp extends SpringBootServletInitializer
 {
     static Logger logger = Logger.getLogger(NFLogApp.class);
     
@@ -28,11 +32,5 @@ public class NFLogApp extends SpringBootServletInitializer implements EmbeddedSe
         System.out.println(sdf.format(calendar.getTime()));
         
         SpringApplication.run(NFLogApp.class, args);
-    }
-    
-    @Override
-    public void customize(ConfigurableEmbeddedServletContainer container)
-    {
-        container.setPort(6000);
     }
 }

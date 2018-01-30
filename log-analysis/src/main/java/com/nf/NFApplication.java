@@ -2,10 +2,12 @@ package com.nf;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import java.text.SimpleDateFormat;
@@ -13,7 +15,11 @@ import java.util.Calendar;
 
 @EnableScheduling
 @SpringBootApplication
-public class NFApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan(basePackages="com.nf.*")
+@EnableJpaRepositories(basePackages={"com.spring.app.repository", "com.nf.*"})
+public class NFApplication extends SpringBootServletInitializer
 {
     static Logger logger = Logger.getLogger(NFApplication.class.getName());
     
@@ -31,9 +37,4 @@ public class NFApplication extends SpringBootServletInitializer implements Embed
         SpringApplication.run(NFApplication.class, args);
     }
 
-    @Override
-    public void customize(ConfigurableEmbeddedServletContainer container)
-    {
-        container.setPort(5000);
-    }
 }

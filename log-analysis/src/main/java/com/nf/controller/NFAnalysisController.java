@@ -19,6 +19,7 @@ import java.util.Date;
  * Created by James on 5/01/18.
  */
 @RestController
+@RequestMapping("/analysis")
 public class NFAnalysisController
 {
     @Autowired

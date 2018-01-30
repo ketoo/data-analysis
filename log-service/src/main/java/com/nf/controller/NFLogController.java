@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
+@RequestMapping("/log")
 public class NFLogController
 {
     private final Logger logger = LoggerFactory.getLogger(getClass());
