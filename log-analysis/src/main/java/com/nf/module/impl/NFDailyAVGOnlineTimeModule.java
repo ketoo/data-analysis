@@ -122,14 +122,14 @@ public class NFDailyAVGOnlineTimeModule implements NFIDailyAVGOnlineTimeModule
                     String time = elements[NFInputType.PlayerLogout.OnlineTime.getId()];
                     fTime += Double.parseDouble(time);
     
-                    String level = elements[NFInputType.PlayerLogout.Level.getId()];
-                    fLevel += Double.parseDouble(level);
+                    //String level = elements[NFInputType.PlayerLogout.Level.getId()];
+                    //fLevel += Double.parseDouble(level);
                     
                 }
             }
     
             mfAVGTime = (float) (fTime / mxLineList.size());
-            mfAVGLevel = (float) (fLevel / mxLineList.size());
+            //mfAVGLevel = (float) (fLevel / mxLineList.size());
         }
     }
 }

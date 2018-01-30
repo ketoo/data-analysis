@@ -40,8 +40,8 @@ public class NFInputType
         GameAppId(3),
         PlatID(4),
         Openid(5),
-        LoginCount(7),
-        DeviceId(8);
+        LoginCount(6),
+        DeviceId(7);
 
         PlayerLogin(int code)
         {
@@ -83,12 +83,12 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        ExpChange(7),
-        Level(8),
-        Time(9),
-        Reason(10),
-        SubReason(11);
+        Openid(5),
+        ExpChange(6),
+        Level(7),
+        Time(8),
+        Reason(9),
+        SubReason(10);
 
         PlayerLevelFlow(int code)
         {
@@ -108,15 +108,15 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        BattleID(7),
-        BattleType(8),
-        RoundScore(9),
-        RoundTime(10),
-        FightValue(11),
-        Result(12),
-        DeadCount(13),
-        Level(14);
+        Openid(5),
+        BattleID(6),
+        BattleType(7),
+        RoundScore(8),
+        RoundTime(9),
+        FightValue(10),
+        Result(11),
+        DeadCount(12),
+        Level(13);
 
 
         RoundFlow(int code)
@@ -137,13 +137,13 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        DeviceId(9),
-        BehaviourId(10),
-        MapId(11),
-        TypeId(12);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        DeviceId(8),
+        BehaviourId(9),
+        MapId(10),
+        TypeId(11);
 
         PlayerBehaviourFlow(int code)
         {
@@ -163,15 +163,15 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        TaskType(9),
-        TaskId(10),
-        TaskStatus(11),
-        TaskArg1(12),
-        TaskArg2(13),
-        TaskArg3(14);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        TaskType(8),
+        TaskId(9),
+        TaskStatus(10),
+        TaskArg1(11),
+        TaskArg2(12),
+        TaskArg3(13);
 
 
         TaskFlow(int code)
@@ -192,13 +192,13 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        ErrID(9),
-        Arg1(10),
-        Arg2(11),
-        Arg3(12);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        ErrID(8),
+        Arg1(9),
+        Arg2(10),
+        Arg3(11);
 
 
         BlockFlow(int code)
@@ -219,16 +219,16 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        ActivityType(9),
-        ActivityId(10),
-        JoinCount(11),
-        Status(12),
-        Arg1(13),
-        Arg2(14),
-        Arg3(15);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        ActivityType(8),
+        ActivityId(9),
+        JoinCount(10),
+        Status(11),
+        Arg1(12),
+        Arg2(13),
+        Arg3(14);
 
         ActivityFlow(int code)
         {
@@ -248,19 +248,19 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        LoginCount(9),
-        TotalOnlineTime(10),
-        PayTime(11),
-        TotalMoney(12),
-        CostMoney(13),
-        APIType(14),
-        APIID(15),
-        Arg1(16),
-        Arg2(17),
-        Arg3(18);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        LoginCount(8),
+        TotalOnlineTime(9),
+        PayTime(10),
+        TotalMoney(11),
+        CostMoney(12),
+        APIType(13),
+        APIID(14),
+        Arg1(15),
+        Arg2(16),
+        Arg3(17);
 
         APIFlow(int code)
         {
@@ -280,19 +280,19 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        RoleID(8),
-        LoginCount(9),
-        TotalOnlineTime(10),
-        Money(11),
-        PayCount(12),
-        TotalMoney(13),
-        ItemID(14),
-        Status(15),
-        Arg1(16),
-        Arg2(17),
-        Arg3(18);
+        Openid(5),
+        Level(6),
+        RoleID(7),
+        LoginCount(8),
+        TotalOnlineTime(9),
+        Money(10),
+        PayCount(11),
+        TotalMoney(12),
+        ItemID(13),
+        Status(14),
+        Arg1(15),
+        Arg2(16),
+        Arg3(17);
 
         PayFlow(int code)
         {
@@ -312,8 +312,8 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
+        Openid(5),
+        Level(6),
         AfterMoney(7),
         Money(8),
         Reason(9),
@@ -339,17 +339,17 @@ public class NFInputType
         EventTime(2),
         GameAppId(3),
         PlatID(4),
-        Openid(6),
-        Level(7),
-        ItemType(8),
-        ItemId(9),
-        Count(10),
-        AfterCount(11),
-        Reason(12),
-        SubReason(13),
-        Money(14),
-        MoneyType(15),
-        AddOrReduce(16);
+        Openid(5),
+        Level(6),
+        ItemType(7),
+        ItemId(8),
+        Count(9),
+        AfterCount(10),
+        Reason(11),
+        SubReason(12),
+        Money(13),
+        MoneyType(14),
+        AddOrReduce(15);
 
 
         ItemFlow(int code)
